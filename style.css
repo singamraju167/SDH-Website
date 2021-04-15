@@ -19,7 +19,7 @@ body {
 }
 
 .nav_section {
-    background-color: #DF1E35;
+    background-color: #4e0911;
     width: 200%;
     height: 8.5rem;
     display: flex;
@@ -34,13 +34,14 @@ body {
     margin-top: 2rem;
     width: 90px;
     height: 90px;
+    border-radius: 10%;
 }
 
-h2 {
+.logo h2 {
     font-family: forte;
     color: white;
     margin-top: 4rem;
-    font-size: 3rem;
+    margin-left: 0.5rem;
 }
 
 .search_bar {
@@ -103,13 +104,21 @@ h2 {
     cursor: pointer;
 }
 
-.nav_section .account {
+.items .cart:focus {
+    outline: none;
+}
+
+.items .account {
     background: transparent;
     border: none;
     color: white;
     font-size: 2rem;
     margin-left: 1.5rem;
     cursor: pointer;
+}
+
+.items .account:focus {
+    outline: none;
 }
 
 h3 {
@@ -119,7 +128,7 @@ h3 {
 }
 
 .nav_list {
-    background-color: #DF1E35;
+    background-color: #4e0911;
     width: 100%;
     height: 5rem;
     display: flex;
@@ -168,47 +177,85 @@ ul li a {
     margin: auto;
 }
 
-
-/* THE DIV */
-
-.simple-ss {
-    width: 100%;
-    height: 300px;
-    background-color: red;
-    margin-top: 14rem;
-    background-image: url("images/bg1.png");
-    background-repeat: no-repeat;
-    /* ANIMATING STUFF */
-    animation-name: slide;
-    animation-duration: 13s;
-    animation-direction: normal;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
+.slider-frame {
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
 }
 
+.banner-logo {
+    display: block;
+    margin-top: 2rem;
+}
 
-/* NOTE CODEPEN AUTOGENERATING -PREFIXES */
+.slider1 {
+    background-color: black;
+    width: 1460px;
+    height: 300px;
+    background-image: url("images/]bliss.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    margin: 2rem;
+}
 
-@keyframes slide {
-    0% {
-        background-position: 0 0;
-    }
-    16.66% {
-        background-position: 0 0;
-    }
-    33.32% {
-        background-position: -800px 0;
-    }
-    49.98% {
-        background-position: -800px 0;
-    }
-    66.64% {
-        background-position: -1600px 0;
-    }
-    83.30% {
-        background-position: -1600px 0;
-    }
-    100% {
-        background-position: 0 0;
-    }
+.slider1 .image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 3rem;
+    margin-left: 20rem;
+}
+
+.slider1 h2 {
+    margin-left: 14.5rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.slider1 .tagline h2 {
+    font-family: forte;
+    font-size: 2.5rem;
+    margin-top: 7rem;
+    margin-left: 7rem;
+}
+
+.slider2 {
+    background-image: url("images/celeb.jpg");
+    width: 1460px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 2rem;
+    filter: contrast(100%);
+    opacity: 100%;
+    display: flex;
+}
+
+.slider2 .image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 6rem;
+    margin-left: 20rem;
+}
+
+.slider2 h1 {
+    font-weight: 900;
+    color: white;
+    margin-left: 7rem;
+    margin-top: 7rem;
+}
+
+.celeb {
+    background-color: #db1c61;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    overflow: hidden;
+    margin-top: 14rem;
+    margin-right: 20rem;
 }
