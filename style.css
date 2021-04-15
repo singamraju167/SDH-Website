@@ -1,4 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap');
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: blue;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.container {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav_section {
+    background-color: #DF1E35;
+    width: 200%;
+    height: 8.5rem;
+    display: flex;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    width: 90px;
+    height: 90px;
+}
+
+h2 {
+    font-family: forte;
+    color: white;
+    margin-top: 4rem;
+    font-size: 3rem;
+}
+
+.search_bar {
+    border-radius: 3px;
+    font-family: inherit;
+    padding: 4rem;
+}
+
+.search_bar .space {
+    background-color: rgb(199, 185, 185);
+    border-radius: 3px;
+    margin-left: 20rem;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+}
+
+.search_bar input {
+    border-radius: 3px;
+    padding: 1rem;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-family: inherit;
+    width: 700px;
+    height: 63px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.search_bar button {
+    background-color: transparent;
+    border: none;
+    color: rgb(41, 38, 38);
+    font-size: 1.5rem;
+    margin: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 3px;
+}
+
+.items {
+    margin-left: 65rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 2.7rem;
+}
+
+.nav_section .cart {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    margin-left: 10rem;
+    cursor: pointer;
+}
+
+.nav_section .account {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+
+h3 {
+    color: white;
+    margin-left: 0.5rem;
+}
+
+.nav_list {
+    background-color: #DF1E35;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    position: fixed;
+}
+
+ul {
+    color: white;
+    display: flex;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+ul li {
+    padding: 4.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Banner Carousel */
+
+
+/* USUAL STUFF */
+
+
+/* body {
+    margin: 10px auto;
+    text-align: center;
+}*/
+
+.content {
+    max-width: 100%;
+    text-align: left;
+    margin: auto;
+}
+
+
+/* THE DIV */
+
+.simple-ss {
+    width: 100%;
+    height: 300px;
+    background-color: red;
+    margin-top: 14rem;
+    background-image: url("images/bg1.png");
+    background-repeat: no-repeat;
+    /* ANIMATING STUFF */
+    animation-name: slide;
+    animation-duration: 13s;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+
+/* NOTE CODEPEN AUTOGENERATING -PREFIXES */
+
+@keyframes slide {
+    0% {
+        background-position: 0 0;
+    }
+    16.66% {
+        background-position: 0 0;
+    }
+    33.32% {
+        background-position: -800px 0;
+    }
+    49.98% {
+        background-position: -800px 0;
+    }
+    66.64% {
+        background-position: -1600px 0;
+    }
+    83.30% {
+        background-position: -1600px 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
 }
