@@ -39,7 +39,7 @@ body {
     margin-top: 2rem;
     width: 90px;
     height: 90px;
-    border-radius: 10%;
+    border-radius: 50%;
 }
 
 .logo h2 {
@@ -236,9 +236,7 @@ ul li a {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin: 2rem;
-    filter: contrast(100%);
     display: flex;
-    overflow: hidden;
 }
 
 .slider2 .image {
