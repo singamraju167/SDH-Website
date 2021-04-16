@@ -12,6 +12,10 @@ body {
     padding-top: 8%;
 }
 
+.main_container {
+    overflow: hidden;
+}
+
 .container {
     overflow: hidden;
     position: fixed;
@@ -122,7 +126,7 @@ body {
     outline: none;
 }
 
-h3 {
+.items h3 {
     color: white;
     font-size: 1rem;
     display: flex;
@@ -189,6 +193,10 @@ ul li a {
     margin-top: 2rem;
 }
 
+.slide-images {
+    overflow: hidden;
+}
+
 .slider1 {
     background-color: black;
     width: 1460px;
@@ -229,8 +237,8 @@ ul li a {
     background-size: 100% 100%;
     margin: 2rem;
     filter: contrast(100%);
-    opacity: 100%;
     display: flex;
+    overflow: hidden;
 }
 
 .slider2 .image {
@@ -260,38 +268,40 @@ ul li a {
     margin-top: 14rem;
     margin-right: 20rem;
 }
+
 .about {
-    
-    background-color:rgba(250, 247, 231, 1);
+    background-color: rgba(250, 247, 231, 1);
     padding: 20px;
     text-align: center;
     text-decoration: none;
     font-family: 'ABeeZee', sans-serif;
-  }
-  h1{    
+}
+
+h1 {
     color: black;
 }
 
+h2 {
+    color: #221e1e;
+}
 
-h2{
-    color:#221e1e;
+h3 {
+    color: rgb(3, 3, 3);
 }
-h3{
-    color:rgb(3, 3, 3);
-}
-h4{
+
+h4 {
     text-align: right;
 }
+
 .featureproduct {
     background-color: rgba(255, 238, 244, 1);
     padding: 20px;
     text-align: center;
     font-family: 'ABeeZee', sans-serif;
-  
-  }
-  
-   .values{
-    box-sizing:border-box;
-     display: flex;
+}
+
+.values {
+    box-sizing: border-box;
+    display: flex;
     font-family: 'Roboto Condensed', sans-serif;
-  }
+}
