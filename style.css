@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    padding-top: 8%;
 }
 
 .container {
@@ -259,3 +260,38 @@ ul li a {
     margin-top: 14rem;
     margin-right: 20rem;
 }
+.about {
+    
+    background-color:rgba(250, 247, 231, 1);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'ABeeZee', sans-serif;
+  }
+  h1{    
+    color: black;
+}
+
+
+h2{
+    color:#221e1e;
+}
+h3{
+    color:rgb(3, 3, 3);
+}
+h4{
+    text-align: right;
+}
+.featureproduct {
+    background-color: rgba(255, 238, 244, 1);
+    padding: 20px;
+    text-align: center;
+    font-family: 'ABeeZee', sans-serif;
+  
+  }
+  
+   .values{
+    box-sizing:border-box;
+     display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
