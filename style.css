@@ -129,7 +129,6 @@ body {
 .items h3 {
     color: white;
     font-size: 1rem;
-    display: flex;
 }
 
 .nav_list {
@@ -269,13 +268,26 @@ ul li a {
     font-size: 1rem;
     overflow: hidden;
 }
+/* Style the header */
+.about {
+    background-color:rgba(250, 247, 231, 1);
+
 
 .about {
     background-color: rgba(250, 247, 231, 1);
+
     padding: 20px;
     text-align: center;
     text-decoration: none;
     font-family: 'ABeeZee', sans-serif;
+  } 
+ 
+
+ 
+  h4{
+      text-align: right;
+  }
+  .featureproduct {
 }
 
 h1 {
@@ -299,6 +311,34 @@ h4 {
     padding: 20px;
     text-align: center;
     font-family: 'ABeeZee', sans-serif;
+  
+  }
+  
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    text-align: center;
+   
+  }
+  
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
 }
 
 .values {
