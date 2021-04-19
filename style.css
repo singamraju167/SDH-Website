@@ -229,7 +229,7 @@ ul li a {
 }
 
 .slider2 {
-    background-image: url("images/celeb.jpg");
+    background-image: url("images/c2.jpg");
     width: 1460px;
     height: 300px;
     background-repeat: no-repeat;
@@ -237,6 +237,11 @@ ul li a {
     margin: 2rem;
     display: flex;
 }
+
+
+/* .slider2 .s2_items {
+    display: block;
+} */
 
 .slider2 .image {
     width: 80px;
@@ -262,14 +267,21 @@ ul li a {
     color: white;
     font-size: 1rem;
     overflow: hidden;
-    margin-top: 14rem;
-    margin-right: 20rem;
 }
 
 /* Style the header */
 
 .about {
+
     background-color: rgba(250, 247, 231, 1);
+=======
+    background-color:rgba(250, 247, 231, 1);
+
+
+.about {
+    background-color: rgba(250, 247, 231, 1);
+
+
     padding: 20px;
     text-align: center;
     text-decoration: none;
@@ -281,7 +293,13 @@ ul li a {
   h4{
       text-align: right;
   }
+
   
+
+  .featureproduct {
+}
+
+
 h1 {
     color: black;
 }
@@ -330,6 +348,10 @@ h4 {
     text-align: center;
     background-color: #f1f1f1;
   }
+
+
+}
+
 
 .values {
     box-sizing: border-box;
