@@ -268,13 +268,19 @@ ul li a {
     font-size: 1rem;
     overflow: hidden;
 }
+
 /* Style the header */
+
 .about {
+
+    background-color: rgba(250, 247, 231, 1);
+=======
     background-color:rgba(250, 247, 231, 1);
 
 
 .about {
     background-color: rgba(250, 247, 231, 1);
+
 
     padding: 20px;
     text-align: center;
@@ -287,8 +293,12 @@ ul li a {
   h4{
       text-align: right;
   }
+
+  
+
   .featureproduct {
 }
+
 
 h1 {
     color: black;
@@ -310,8 +320,7 @@ h4 {
     background-color: rgba(255, 238, 244, 1);
     padding: 20px;
     text-align: center;
-    font-family: 'ABeeZee', sans-serif;
-  
+    font-family: 'ABeeZee', sans-serif;  
   }
   
   
@@ -339,7 +348,10 @@ h4 {
     text-align: center;
     background-color: #f1f1f1;
   }
+
+
 }
+
 
 .values {
     box-sizing: border-box;
