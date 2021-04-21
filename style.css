@@ -184,7 +184,7 @@ ul li a {
 .slider-frame {
     align-items: center;
     justify-content: center;
-    margin-top: 8rem;
+    margin-top: 5rem;
 }
 
 .banner-logo {
@@ -238,6 +238,29 @@ ul li a {
     display: flex;
 }
 
+.slider2 .btn {
+    margin-top: 0;
+}
+
+.slider2 .btn button {
+    background-color: #db1c61;
+    margin-left: 20rem;
+    width: 200px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.slider2 .btn button:focus {
+    outline: none;
+}
+
+.slider2 .btn button:hover {
+    background-color: #fff;
+    color: #db1c61;
+    font-weight: bold;
+}
+
 
 /* .slider2 .s2_items {
     display: block;
@@ -255,7 +278,32 @@ ul li a {
     font-weight: 900;
     color: white;
     margin-left: 7rem;
-    margin-top: 7rem;
+    margin-top: 6.3rem;
+}
+
+.slider3 {
+    width: 1460px;
+    height: 300px;
+    background-image: url("images/capsules_edited.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 2rem;
+    display: flex;
+}
+
+.slider3 img {
+    width: 300px;
+    height: 200px;
+    margin-top: 3rem;
+    margin-left: 10rem;
+    border-radius: 5px;
+}
+
+.slider3 p {
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 8rem;
+    margin-left: 1.5rem;
 }
 
 .celeb {
@@ -302,14 +350,22 @@ h1 {
 
 h2 {
     color: #221e1e;
+    margin-left: 2rem;
+    margin-bottom: 0;
+    padding-left: 2rem;
 }
 
 h3 {
     color: rgb(3, 3, 3);
 }
 
+.heading {
+    display: flex;
+    justify-content: space-between;
+}
+
 h4 {
-    text-align: right;
+    margin-right: 2.5rem;
 }
 
 .featureproduct {
@@ -317,10 +373,18 @@ h4 {
     padding: 20px;
     text-align: center;
     font-family: 'ABeeZee', sans-serif;
-    margin: 2rem;
-    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
     justify-content: center;
     display: block;
+}
+
+.featureproduct img {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .featureproduct p {
@@ -375,4 +439,10 @@ h4 {
     align-items: center;
     justify-content: center;
     margin-left: 3rem;
+}
+
+.values img {
+    border-radius: 7px;
+    width: 220px;
+    height: 200px;
 }
