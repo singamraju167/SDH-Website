@@ -1,12 +1,31 @@
 {
-   "name": "sdh_website",
-   "description": "",
-   "version": "0.0.0",
-   "license": "UNLICENSED",
-   "repository": {
-       "type": "git",
-       "url": "https://github.com/singamraju167/SDH-Website.git"
-   },
-   "scripts": {},
-   "devDependencies": {}
+    "name": "sdh_website",
+    "description": "",
+    "version": "0.0.0",
+    "license": "UNLICENSED",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/singamraju167/SDH-Website.git"
+    },
+    "scripts": {
+        "clean": "rm -rf ./dist ./.parcel-cache",
+        "dev": "node tools/watcher.js & yarn clean && parcel serve src/index.html --port=2020 --no-cache --open && kill $!",
+        "build": "yarn clean && TWRM_BUILD=production parcel build src/index.html --no-source-maps --no-cache",
+        "preview": "yarn build && sirv dist -p 2020 -H"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.13.16",
+        "@babel/eslint-parser": "^7.13.14",
+        "@babel/plugin-syntax-top-level-await": "^7.12.13",
+        "autoprefixer": "^10.2.5",
+        "chokidar": "^3.5.1",
+        "eslint": "^7.25.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-simple-import-sort": "^7.0.0",
+        "parcel": "^2.0.0-nightly.643",
+        "postcss": "^8.2.12",
+        "postcss-import": "^14.0.1",
+        "prettier": "^2.2.1"
+    }
 }
