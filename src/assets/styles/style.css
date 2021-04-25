@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap');
+@import url('https:/fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -201,7 +201,7 @@ ul li a {
     background-color: black;
     width: 1460px;
     height: 300px;
-    background-image: url("images/]bliss.jpg");
+    background-image: url("../img/bliss.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
@@ -230,7 +230,7 @@ ul li a {
 }
 
 .slider2 {
-    background-image: url("images/c2.jpg");
+    background-image: url("../img/c2.jpg");
     width: 1460px;
     height: 300px;
     background-repeat: no-repeat;
@@ -285,7 +285,7 @@ ul li a {
 .slider3 {
     width: 1460px;
     height: 300px;
-    background-image: url("images/capsules_edited.jpg");
+    background-image: url("../img/capsules_edited.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin: 2rem;

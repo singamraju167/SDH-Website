@@ -1,0 +1,12 @@
+{
+   "name": "sdh_website",
+   "description": "",
+   "version": "0.0.0",
+   "license": "UNLICENSED",
+   "repository": {
+       "type": "git",
+       "url": "https://github.com/singamraju167/SDH-Website.git"
+   },
+   "scripts": {},
+   "devDependencies": {}
+}
