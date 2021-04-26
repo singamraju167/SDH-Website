@@ -90,6 +90,10 @@ body {
     box-shadow: 3px;
 }
 
+.search_bar .search:focus {
+    outline: none;
+}
+
 .items {
     margin-left: 42rem;
     display: flex;
@@ -333,6 +337,7 @@ a {
     text-decoration: none;
     font-family: 'ABeeZee', sans-serif;
     margin: 2rem;
+    border: 2px solid black;
     justify-content: center;
 }
 
@@ -379,6 +384,7 @@ h4 {
     margin-right: 2rem;
     justify-content: center;
     display: block;
+    border: 2px solid black;
 }
 
 .featureproduct img {
@@ -502,7 +508,7 @@ h4 {
 }
 
 .test-child .heading h3 {
-    background-color: rgba(228, 240, 241, 1);
+    background-color: #E4F0F1;
     text-align: center;
     padding: 10px;
     border-radius: 6px;
@@ -510,7 +516,7 @@ h4 {
 }
 
 .test-child .heading p {
-    background-color: rgba(228, 240, 241, 1);
+    background-color: #E4F0F1;
     text-align: center;
     display: flex;
     padding: 10px;
