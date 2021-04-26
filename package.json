@@ -9,8 +9,8 @@
     },
     "scripts": {
         "clean": "rm -rf ./dist ./.parcel-cache",
-        "dev": "node tools/watcher.js & yarn clean && parcel serve src/index.html --port=2020 --no-cache --open && kill $!",
-        "build": "yarn clean && TWRM_BUILD=production parcel build src/index.html --no-source-maps --no-cache",
+        "dev": "node tools/watcher.js & yarn clean && parcel serve src/*.html --port=2020 --no-cache --open && kill $!",
+        "build": "yarn clean && TWRM_BUILD=production parcel build src/*.html --no-source-maps --no-cache",
         "preview": "yarn build && sirv dist -p 2020 -H"
     },
     "devDependencies": {
@@ -26,6 +26,7 @@
         "parcel": "^2.0.0-nightly.643",
         "postcss": "^8.2.12",
         "postcss-import": "^14.0.1",
+        "posthtml-modules": "^0.7.4",
         "prettier": "^2.2.1"
     }
 }
