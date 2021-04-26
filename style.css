@@ -158,7 +158,7 @@ ul li {
     margin-top: 2rem;
 }
 
-ul li a {
+a {
     text-decoration: none;
     color: white;
 }
@@ -333,6 +333,7 @@ ul li a {
     text-decoration: none;
     font-family: 'ABeeZee', sans-serif;
     margin: 2rem;
+    justify-content: center;
 }
 
 .about img {
@@ -514,4 +515,24 @@ h4 {
     display: flex;
     padding: 10px;
     border-radius: 6px;
+}
+
+
+/* ADDED BY VASANTH DEVELOPER */
+
+#navSpacing {
+    /*  Fixed elements, don't take up the size on
+        the DOM. You have to manually add that spacing.
+        Otherwise elements would be incorrectly placed.
+        the added height should be exactly the same of the
+        fixed element.
+    */
+    height: 216px;
+    background-color: pink;
+    width: 100%;
+}
+
+section {
+    padding-top: 216px;
+    margin-top: -216px;
 }
