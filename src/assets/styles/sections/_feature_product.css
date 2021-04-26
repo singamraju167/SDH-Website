@@ -1,0 +1,35 @@
+/* Feature Product Start */
+
+.featureproduct {
+    background-color: rgb(212, 235, 230);
+    padding: 20px;
+    text-align: center;
+    font-family: 'ABeeZee', sans-serif;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: block;
+}
+
+.featureproduct img {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.featureproduct p {
+    width: 600px;
+    margin-left: 25rem;
+    border-radius: 5px;
+    padding: 2rem;
+    background-color: rgb(84, 212, 185);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(238, 4, 4, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(238, 4, 4, 0.2);
+}
+
+/* Feature Product End */

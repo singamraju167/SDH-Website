@@ -1,0 +1,55 @@
+/* Values Section Start */
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Remove extra left and right margins, due to padding */
+
+.row {
+    margin: 0 -5px;
+}
+
+
+/* Style the counter cards */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    background-color: #e8e7f0;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+}
+
+.values {
+    box-sizing: border-box;
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+}
+
+.values img {
+    border-radius: 7px;
+    width: 220px;
+    height: 200px;
+}
+
+/* Values Section End */
