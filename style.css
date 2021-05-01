@@ -165,7 +165,11 @@ ul {
     margin-top: 2rem;
 }
 
+
 .nav_list ul li a {
+
+a {
+
     text-decoration: none;
     color: white;
 }
@@ -181,6 +185,7 @@ ul {
     font-family: 'ABeeZee', sans-serif;
     margin-top: 7rem;
     border: 2px solid black;
+    justify-content: center;
 }
 
 .about img {
@@ -363,6 +368,7 @@ h4 {
 }
 
 
+
 /* Footer By Revathi */
 
 .container {
@@ -519,4 +525,22 @@ input {
     .footer-col {
         width: 100%;
     }
+
+/* ADDED BY VASANTH DEVELOPER */
+
+#navSpacing {
+    /*  Fixed elements, don't take up the size on
+        the DOM. You have to manually add that spacing.
+        Otherwise elements would be incorrectly placed.
+        the added height should be exactly the same of the
+        fixed element.
+    */
+    height: 216px;
+    background-color: pink;
+    width: 100%;
+}
+
+section {
+    padding-top: 216px;
+    margin-top: -216px;
 }

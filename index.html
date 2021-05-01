@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+i<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,19 +8,27 @@
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <link rel = "stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
     <title>Sanford Drug House</title>
 </head>
 <body>
     <!--navSection by Rajyalaxmi-->
+
     <div class="main_container">
         <div class = "container1">
             <div class = "nav_section">
+
+    <div>
+        <div class = "container" >
+            <div class = "nav_section" id="nav1">
+
                 <div class = "logo">
                     <img src = "images/SDH.png" alt = "logo">
                     <h2>SDH</h2>
                 </div>
 
-                <div class = "search_bar">
+                <div class = "search_bar"  id="search">
                     <div class = "space">
                         <input type="text" id="search-term" placeholder = "Search For anything...">
                         <button class = "search"><i class = "fas fa-search"></i></button>
@@ -29,13 +37,18 @@
 
                 <div class = "items">
                     <button class = "cart" style = "cursor:pointer;"><i class="fas fa-shopping-cart"></i></button>
-                    <button class = "account"><i class="fas fa-user-circle"></i></button>
-                    <h3> Login / Register </h3>
+                    <button class = "account" style="cursor:pointer"><a href="account.html"> <i class="fas fa-user-circle"></i>
+                    
+        
+        </a></button>
+
+            
                 </div>
             </div>
 
             <div class = "nav_list">
                 <ul class = "list">
+
                     <li><a href = "#home">Home</a></li>
                     <li><a href = "#about">About us</a></li>
                     <li><a href = "#home">Products</a></li>
@@ -47,9 +60,54 @@
         </div>
 
 
+
+                    <li><a href = "#">Home</a></li>
+                    <li><a href = "#aboutus">About us</a></li>
+                    <li><a href = "#product">Products</a></li>
+                    <li><a href = "#values">Values</a></li>
+                    <li><a href = "#test">Testimonials</a></li>
+                    <li><a href = "#home">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <!-- Banner Carousel -->
+         <section id="home">
+          
+        <div class="slider-frame">
+            <div class ="slide-images">
+            
+                <div class="slider1">
+                    <div class = "banner-logo">
+                        <img class = "image" src = "images/SDH.png" alt = "logo">
+                        <h2>Sanford Drug House</h2>
+                    </div>
+
+                    <div class = "tagline">
+                        <h2> Creating a world of Health and Bliss </h2>
+                    </div>
+                </div>
+            
+                <div class = "slider2">
+                    <img class = "image" src = "images/SDH.png" alt = "logo">
+                    <div class = "btn">
+                        <h1>Sanford Drug House Celebrates 40 years</h1>
+                        <button class = "celeb"> Join the celebration </button>
+                    </div>
+                </div>
+
+                <div class = "slider3">
+                    <img src = "images/wiliz.jpg">
+                    <p>India's first producer of Zinc Acetate capsules specially for treatment for Wilson's disease</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
         <!--about us , feature product, vlaues by sowmya-->
 
-        <div class="section">
+        <section id="aboutus">
+         <h1>About</h1>
             <div class="about">
                 <h1>About us</h1>
                 <img src = "images/SDH.png">
@@ -61,7 +119,9 @@
                 </p> 
        
             </div>  
-
+            </section>
+                
+                <section id="product">
             <div class = "heading">
                 <h2>Feature Product</h2>
                 <h4>view all</h4>
@@ -74,7 +134,9 @@
                 <p> Supportive therapy for WILSON’S DISEASE:
                 Wilzin containing zinc acetate, is an effective new weapon in the treatment of Wilson’s Disease. As Zinc Acetate is economical and least toxic, it is vital alternative to chelating agents like Penicillamine & Trientine Hydrochloride.</p>
             </div>
-     
+            </section>
+
+              <section id="values">
    
             <h2>ORGANIZATIONAL VALUES</h2>
             <div class="values">
@@ -108,10 +170,11 @@
                 </div>
                    
             </div>
-        </div>   
+        </section>   
    
 
         <!-- Testimonials Code By Sowmya -->
+        <section id="test">
         <h2>Testimonials</h2>
 
         <div class="test-container">
@@ -143,6 +206,7 @@
   
         </div>
     
+
        
                     <!-- Footer By Revathi -->
      <footer class="footer" id = "footer">
@@ -213,7 +277,22 @@
   	 </div>
     </footer>
    </div>
+     </section>
+   <script> 
+      var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true,
+    const element = document.getElementById('nav1');
+    let position = element.offsetTop - navHeight;
 
+
+ 
+    
+     
+     });
+
+
+   </script>
 
 </body>
 </html>
