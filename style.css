@@ -14,8 +14,6 @@ body {
 
 .main_container {
     overflow: hidden;
-    display: block;
-    align-items: center;
 }
 
 .container1 {
@@ -26,7 +24,6 @@ body {
 }
 
 .nav_section {
-    width: 100%;
     background-color: #422469;
     width: 200%;
     height: 8.5rem;
@@ -63,8 +60,8 @@ body {
     border-radius: 3px;
     margin-left: 5rem;
     overflow: hidden;
-    position: fixed;
-    display: flex;
+    position: relative;
+    display: block;
     height: 2.8rem;
 }
 
@@ -78,6 +75,8 @@ body {
     height: 45px;
     font-size: 1rem;
     font-weight: bold;
+    margin: 0;
+    border: none;
 }
 
 .search_bar button {
@@ -93,8 +92,17 @@ body {
     box-shadow: 3px;
 }
 
-.search_bar .search:focus {
-    outline: none;
+.search_bar button {
+    background-color: transparent;
+    border: none;
+    color: rgb(41, 38, 38);
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 3px;
 }
 
 .items {
@@ -150,14 +158,14 @@ body {
     position: fixed;
 }
 
-ul {
+.new ul {
     color: white;
     display: flex;
     list-style-type: none;
     overflow: hidden;
 }
 
-.nav_list ul li {
+.new ul li {
     padding: 4.5rem;
     font-size: 1rem;
     font-weight: bold;
@@ -165,13 +173,27 @@ ul {
     margin-top: 2rem;
 }
 
-
-.nav_list ul li a {
-
-a {
-
+.new a {
     text-decoration: none;
     color: white;
+}
+
+
+/* Banner Carousel */
+
+
+/* USUAL STUFF */
+
+
+/* body {
+    margin: 10px auto;
+    text-align: center;
+}*/
+
+.content {
+    max-width: 1600px;
+    text-align: left;
+    margin: auto;
 }
 
 
@@ -183,8 +205,7 @@ a {
     text-align: center;
     text-decoration: none;
     font-family: 'ABeeZee', sans-serif;
-    margin-top: 7rem;
-    border: 2px solid black;
+    margin: 2rem;
     justify-content: center;
 }
 
@@ -194,7 +215,7 @@ a {
     border-radius: 50%;
 }
 
-h4 {
+.heading h4 {
     text-align: right;
 }
 
@@ -218,7 +239,7 @@ h3 {
     justify-content: space-between;
 }
 
-h4 {
+.featureproduct h4 {
     margin-right: 2.5rem;
 }
 
@@ -227,9 +248,10 @@ h4 {
     padding: 20px;
     text-align: center;
     font-family: 'ABeeZee', sans-serif;
+    margin-left: 2rem;
+    margin-right: 2rem;
     justify-content: center;
     display: block;
-    border: 2px solid black;
 }
 
 .featureproduct img {
@@ -313,6 +335,7 @@ h4 {
     justify-content: center;
     align-items: center;
     display: flex;
+    margin: 1rem 2rem 1rem 2rem;
 }
 
 .test-container .test-child {
@@ -320,7 +343,7 @@ h4 {
     padding: 20px;
     border: 2px solid rgb(0, 0, 0);
     background-color: #8284ec;
-    width: 725px;
+    width: 700px;
     height: 450px;
     display: flex;
 }
@@ -352,7 +375,7 @@ h4 {
 }
 
 .test-child .heading h3 {
-    background-color: #E4F0F1;
+    background-color: rgba(228, 240, 241, 1);
     text-align: center;
     padding: 10px;
     border-radius: 6px;
@@ -360,20 +383,36 @@ h4 {
 }
 
 .test-child .heading p {
-    background-color: #E4F0F1;
+    background-color: rgba(228, 240, 241, 1);
     text-align: center;
     display: flex;
     padding: 10px;
     border-radius: 6px;
 }
 
+#navSpacing {
+    /*  Fixed elements, don't take up the size on
+        the DOM. You have to manually add that spacing.
+        Otherwise elements would be incorrectly placed.
+        the added height should be exactly the same of the
+        fixed element.
+    */
+    height: 216px;
+    background-color: pink;
+    width: 100%;
+}
+
+section {
+    padding-top: 216px;
+    margin-top: -216px;
+}
 
 
-/* Footer By Revathi */
+/* footer by revathi*/
 
 .container {
-    max-width: 1170px;
-    margin: auto;
+    max-width: 1400px;
+    margin: 0;
 }
 
 .row {
@@ -387,12 +426,12 @@ li {
 
 ul {
     list-style: none;
+    padding: 20px;
 }
 
 .footer {
     background-color: #24262b;
-    /* padding: 70px 0; */
-    margin-bottom: 1rem;
+    padding: 10px 0;
 }
 
 .footer-col {
@@ -404,21 +443,22 @@ ul {
     font-size: 18px;
     color: #ffffff;
     text-transform: capitalize;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     font-weight: 500;
     position: relative;
+    padding: 5px;
+    margin-left: 20px;
 }
 
 .footer-col h4::before {
     content: '';
     position: absolute;
     left: 0;
-    right: 50px;
     bottom: -10px;
-    background-color: #e91e63;
+    background-color: #1c68cc;
     height: 2px;
     box-sizing: border-box;
-    width: 50px;
+    width: 100px;
 }
 
 .footer-col ul li:not(:last-child) {
@@ -438,20 +478,39 @@ ul {
 
 .footer-col ul li a:hover {
     color: #ffffff;
+    padding-left: 4px;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
     padding-left: 8px;
 }
 
 .footer-col .social-links a {
     display: inline-block;
-    height: 40px;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
     width: 40px;
     background-color: rgba(255, 255, 255, 0.2);
-    margin: 0 10px 10px 0;
+    margin: 20px 12px 12px 2px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
     color: #ffffff;
     transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.footer-col form {
+    margin-top: 2rem;
 }
 
 label {
@@ -481,11 +540,6 @@ label {
     color: #333;
 }
 
-.footer-col .social-links a:hover {
-    color: #24262b;
-    background-color: #ffffff;
-}
-
 input {
     width: 12rem;
     padding: 0.3rem;
@@ -509,6 +563,11 @@ input {
     margin-right: 1.7rem;
     border-radius: 7%;
     border: 1px solid rgb(223, 211, 211);
+    cursor: pointer;
+}
+
+textarea {
+    margin-top: 0.5rem;
 }
 
 
@@ -525,22 +584,4 @@ input {
     .footer-col {
         width: 100%;
     }
-
-/* ADDED BY VASANTH DEVELOPER */
-
-#navSpacing {
-    /*  Fixed elements, don't take up the size on
-        the DOM. You have to manually add that spacing.
-        Otherwise elements would be incorrectly placed.
-        the added height should be exactly the same of the
-        fixed element.
-    */
-    height: 216px;
-    background-color: pink;
-    width: 100%;
-}
-
-section {
-    padding-top: 216px;
-    margin-top: -216px;
 }
